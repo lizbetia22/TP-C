@@ -1,7 +1,7 @@
-import exo1;
+import exo5;
 
 int main() {
     // Exécution de l'application via son constructeur
-    exo1::Application{};
+    exo5::Application{};
     return 0;
 }

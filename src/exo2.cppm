@@ -1,13 +1,18 @@
 module;
 import std;
-export module exo1;
+export module exo2;
 
-export namespace exo1 {
+export namespace exo2 {
 
     class Vector {
         double x, y, z;
     public:
         Vector(const double x, const double y, const double z): x{x}, y{y}, z{z} {
+            std::cout << "Vector(x,y,z) created" << std::endl;
+        }
+
+        Vector(const Vector& vector): x{vector.x}, y{vector.y}, z{vector.z} {
+            std::cout << "Vector(vector) copied" << std::endl;
         }
 
         //Getter
@@ -26,7 +31,13 @@ export namespace exo1 {
             z *= value;
         }
 
-        void Sum(const Vector vector) {
+        void Sum1(const Vector vector) {
+            x += vector.x;
+            y += vector.y;
+            z += vector.z;
+        }
+
+        void Sum2(const Vector& vector) {
             x += vector.x;
             y += vector.y;
             z += vector.z;
@@ -40,11 +51,14 @@ export namespace exo1 {
     class Application {
     public:
         Application() {
-            auto v1 = Vector{5, 10, 15};
+            auto v1 = Vector{1, 2, 3};
             std::cout << v1.ToString() << std::endl;
             v1.Homothety(2);
             std::cout << v1.ToString() << std::endl;
-            v1.Sum(Vector{1, 2, 3});
+            const auto v2 = Vector{1, 2, 3};
+            v1.Sum1(v2);
+            std::cout << v1.ToString() << std::endl;
+            v1.Sum2(v2);
             std::cout << v1.ToString() << std::endl;
         }
     };

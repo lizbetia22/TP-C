@@ -2,7 +2,7 @@
 cmake_minimum_required(VERSION 3.29)
 
 # Nom du projet et de l'exécutable généré
-project(template_cpp_cmake)
+project(project)
 
 # Forcer l'utilisation de C++ 23
 set(CMAKE_CXX_STANDARD 23)
@@ -26,9 +26,33 @@ include(cmake/std.cmake)
 set(PROJECT_FILES
         ${SRC_DIR}/exo1.cppm
 )
+set(PROJECT_FILES
+        ${SRC_DIR}/exo2.cppm
+)
+set(PROJECT_FILES
+        ${SRC_DIR}/exo3.cppm
+)
+set(PROJECT_FILES
+        ${SRC_DIR}/exo4.cppm
+)
+set(PROJECT_FILES
+        ${SRC_DIR}/exo5.cppm
+)
 # Liste des fichiers sources des tests unitaires
 set(TEST_FILES
         ${TESTS_DIR}/exo1.cpp
+)
+set(TEST_FILES
+        ${TESTS_DIR}/exo2.cpp
+)
+set(TEST_FILES
+        ${TESTS_DIR}/exo3.cpp
+)
+set(TEST_FILES
+        ${TESTS_DIR}/exo4.cpp
+)
+set(TEST_FILES
+        ${TESTS_DIR}/exo5.cpp
 )
 # Exécutable principal
 add_executable(${PROJECT_NAME}
