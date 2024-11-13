@@ -30,6 +30,7 @@ export namespace exo5 {
     };
 
     class Polygon : public Shape {
+        std::vector<double> sides;
     public:
         Polygon(const std::initializer_list<double> args) {
             sides = args;
@@ -47,13 +48,10 @@ export namespace exo5 {
             }
             return message.str();
         }
-    private:
-        std::vector<double> sides;
     };
 
     class Rectangle : public Polygon {
     public:
-        // On utilise la syntaxe d'initialisation {} pour créer l'objet std::initializer_list
         Rectangle(const double side1, const double side2) : Polygon{{side1, side2, side1, side2}} {
         }
 

@@ -5,8 +5,8 @@ export module exo2;
 export namespace exo2 {
 
     class Vector {
-        double x, y, z;
     public:
+        double x, y, z;
         Vector(const double x, const double y, const double z): x{x}, y{y}, z{z} {
             std::cout << "Vector(x,y,z) created" << std::endl;
         }

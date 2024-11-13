@@ -38,6 +38,15 @@ set(PROJECT_FILES
 set(PROJECT_FILES
         ${SRC_DIR}/exo5.cppm
 )
+set(PROJECT_FILES
+        ${SRC_DIR}/exo6.cppm
+)
+set(PROJECT_FILES
+        ${SRC_DIR}/exo7.cppm
+)
+set(PROJECT_FILES
+        ${SRC_DIR}/exo8.cppm
+)
 # Liste des fichiers sources des tests unitaires
 set(TEST_FILES
         ${TESTS_DIR}/exo1.cpp
@@ -53,6 +62,12 @@ set(TEST_FILES
 )
 set(TEST_FILES
         ${TESTS_DIR}/exo5.cpp
+)
+set(TEST_FILES
+        ${TESTS_DIR}/exo6.cpp
+)
+set(TEST_FILES
+        ${TESTS_DIR}/exo8.cpp
 )
 # Exécutable principal
 add_executable(${PROJECT_NAME}

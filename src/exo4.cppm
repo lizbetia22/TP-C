@@ -15,8 +15,8 @@ export namespace exo4 {
     };
 
     class Circle : public Shape {
-        double radius;
     public:
+      double radius;
         explicit Circle(const double radius): radius{radius} {
         }
 

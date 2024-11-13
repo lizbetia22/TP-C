@@ -5,8 +5,8 @@ export module exo1;
 export namespace exo1 {
 
     class Vector {
-        double x, y, z;
     public:
+        double x, y, z;
         Vector(const double x, const double y, const double z): x{x}, y{y}, z{z} {
         }
 
