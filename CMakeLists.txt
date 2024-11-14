@@ -47,6 +47,28 @@ set(PROJECT_FILES
 set(PROJECT_FILES
         ${SRC_DIR}/exo8.cppm
 )
+set(PROJECT_FILES
+        ${SRC_DIR}/exo9.cppm
+)
+set(PROJECT_FILES
+        ${SRC_DIR}/exo10/lzw.cppm
+)
+set(PROJECT_FILES
+        ${SRC_DIR}/exo10/app.cppm
+)
+set(PROJECT_FILES
+        ${SRC_DIR}/exo10/encoder.cppm
+)
+set(PROJECT_FILES
+        ${SRC_DIR}/exo10/encoderv1.cppm
+)
+set(PROJECT_FILES
+        ${SRC_DIR}/exo10/encoderv2.cppm
+)
+set(PROJECT_FILES
+        ${SRC_DIR}/exo10/encoderv3.cppm
+)
+
 # Liste des fichiers sources des tests unitaires
 set(TEST_FILES
         ${TESTS_DIR}/exo1.cpp
@@ -68,6 +90,9 @@ set(TEST_FILES
 )
 set(TEST_FILES
         ${TESTS_DIR}/exo8.cpp
+)
+set(TEST_FILES
+        ${TESTS_DIR}/exo9.cpp
 )
 # Exécutable principal
 add_executable(${PROJECT_NAME}

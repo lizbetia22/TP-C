@@ -1,7 +1,6 @@
-import exo8;
+import lzw;
 
 int main() {
-    // Exécution de l'application via son constructeur
-    exo8::Application{};
+    lzw::Application app(argv[1], argv[2], argv[3]);
     return 0;
 }
